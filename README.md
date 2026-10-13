@@ -4,6 +4,12 @@
 
 ![Portfolio Projectt](./portfolioproject.png)
 
+## 🛠️ Tech Stack
+* HTML5 — Website structure
+* CSS3 — Styling and responsive design
+* JavaScript (ES6+) — Interactive functionality
+* React — User interface development
+
 # Portfolio App
 
 🔗 **Live Demo:** [View Live Website](https://portfoliopebsitepurplegold.vercel.app/)
