@@ -166,9 +166,6 @@ label {
     color: #00FF00;
 }
 
-.dark-theme .footer__copyright {
-    color: #00FF00;
-}
 
 .dark-theme 
 section,
@@ -230,7 +227,7 @@ LANDING PAGE
     background-color: black;
     color: #00FF00;
     text-decoration: none;
-    font-size: 44px;    
+    font-size: 40px;    
     margin-right: 12px;
     border-radius: 15%;
 }
