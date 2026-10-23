@@ -21,7 +21,7 @@ li {
 }
 
 section {
-    background-color: #E3FFFF;
+    background-color: white;
     transition: all 300ms ease;
 }
 
@@ -77,11 +77,11 @@ html, body {
 }
 
 .link__hover-effect--white:after {
-    background-color: white;
+    background-color: #00FF00;
 }
 
 .link__hover-effect--black:after {    
-    background-color: #48013c;
+    background-color: #00FF00;
 }
 
 nav, 
@@ -133,10 +133,13 @@ label {
     font-weight: bold;
 }
 
+.yellow1 {
+    color: #00FF00;
+}
+
 .dark-theme nav,
 .dark-theme .title,
 .dark-theme .gold1,
-.dark-theme .blue1,
 .dark-theme .section__title,
 .dark-theme .section__sub-title,
 .dark-theme .nav__link--anchor,
@@ -147,6 +150,26 @@ label {
     color: white;
 }
 
+.dark-theme .nav__link--anchor {
+    color: #00FF00;
+}
+
+.dark-theme .yellow1 {
+    color: #00FF00;
+}
+
+.dark-theme .blue1 {
+    color: #00FF00;
+}
+
+.dark-theme .footer__social--link {
+    color: #00FF00;
+}
+
+.dark-theme .footer__copyright {
+    color: #00FF00;
+}
+
 .dark-theme 
 section,
 body,
@@ -154,8 +177,11 @@ html {
     background-color: #242424;
 }
 
-.dark-theme .scroll__icon:after {
+.dark-theme .link__hover-effect--white:after {
     background-color: white;
+}
+.dark-theme .scroll__icon:after {
+    background-color: #00FF00;
 }
 
 .dark-theme #personal-logo {
@@ -201,16 +227,16 @@ LANDING PAGE
 }
 
 .social__link {
-    background-color: maroon;
-    color: blue;
+    background-color: black;
+    color: #00FF00;
     text-decoration: none;
-    font-size: 32px;    
+    font-size: 44px;    
     margin-right: 12px;
-    border-radius: 10%;
+    border-radius: 15%;
 }
 
 .gold1 {
-    color: maroon;
+    color: #000000;
     font-size: 55px;
 }
 
@@ -220,8 +246,8 @@ LANDING PAGE
 }
 
 .blue1 {
-    color: blue;
-    font-size: 33px;
+    color: #00FF00;
+    font-size: 44px;
 }
 
 .blue {
@@ -230,14 +256,15 @@ LANDING PAGE
 }
 
 .green1 {
-    color: maroon;
-    font-size: 18px;
+    color: #000000;
+    font-size: 24px;
+    line-height: 1.8;    
 }
 
 .green {
     line-height: 1.8;
     font-size: 18px;
-    color: #48013c;
+    color: #000000;
     margin-bottom: 16px;
 }
 
@@ -262,13 +289,13 @@ button:active {
 }
 
 .mail__bnt {
-    background-color: maroon;
-    color: blue;
+    background-color: black;
+    color: #00FF00;
     border: none;
     border-radius: 50%;
-    width:55px;
-    height: 55px;
-    font-size: 24px;
+    width:66px;
+    height: 66px;
+    font-size: 33px;
     position: fixed;
     bottom: 32px; 
     right: 40px; 
@@ -537,8 +564,8 @@ nav {
 
 .nav__link--anchor {
     text-decoration: none;
-    font-size: 18px;
-    color: maroon; 
+    font-size: 22px;
+    color: black; 
     font-weight: 700;
 }
 
@@ -646,6 +673,7 @@ footer {
 .footer__social--link,
 .footer__copyright {
     color:  white;
+    font-size: 22px;
     font-weight: 700;
 }
 
