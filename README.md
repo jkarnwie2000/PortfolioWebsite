@@ -19,7 +19,7 @@
 
 # Portfolio Website
 
-🔗 **Live Demo:** [View Live Website](https://portfoliopebsitepurplegold.vercel.app/)
+🔗 **Live Demo:** [View Live Website](https://portfolio-website-whitegold.vercel.app/))
 
 A responsive JavaScript portfolio that showcases my diverse skillsets and readiness to take on a new role.
 
