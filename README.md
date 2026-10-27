@@ -87,7 +87,7 @@ Portfolio-Website/
 │   ├── circle.svg
 │   ├── copilot-color.png
 │   ├── css.png
-│   ├── David Bragg Resume.pdf
+│   ├── David Bragg Resume.docx
 │   ├── Eportfolio YT.png
 │   ├── favicon.ico
 │   ├── firebase.png
@@ -105,7 +105,7 @@ Portfolio-Website/
 │   ├── imag 6.png
 │   ├── imag 7.png
 │   ├── js.png
-│   ├── Julius Karnwie Resume.pdf
+│   ├── Julius Karnwie Resume.docx
 │   ├── logo.svg
 │   ├── nextjs-org-logo.png
 │   ├── Node.js.png
