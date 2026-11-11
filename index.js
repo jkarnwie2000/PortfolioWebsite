@@ -178,5 +178,22 @@ form.addEventListener("submit", (event) => {
         });
 });
 
+/* ---------- Back to top ----------
+   #top is the sticky header, which the browser treats as already in view,
+   and a focused form field can keep the page pinned. Scroll the window directly. */
+document.querySelectorAll('a[href="#top"]').forEach((link) => {
+    link.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (document.activeElement && document.activeElement !== document.body) {
+            document.activeElement.blur(); // closes the message box / mobile keyboard
+        }
+        setNav(false);
+        window.scrollTo({ top: 0, behavior: reduceMotion ? "auto" : "smooth" });
+        if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+        // Keep keyboard users at the top of the page without a second jump.
+        document.querySelector(".brand").focus({ preventScroll: true });
+    });
+});
+
 /* ---------- Footer year ---------- */
 document.getElementById("year").textContent = new Date().getFullYear();
