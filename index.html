@@ -3,475 +3,425 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Julius Karnwie, a frontend developer specializing in creating responsive and user-friendly web experiences.">
-    <title>Julius Karnwie | Frontend Developer</title>
+    <title>Julius Karnwie | Full-Stack AI Developer</title>
+    <meta name="description" content="Julius Karnwie is a full-stack AI developer who builds and ships AI-powered web apps with React, Next.js, TypeScript, serverless APIs, Stripe and Firebase.">
+    <meta property="og:title" content="Julius Karnwie | Full-Stack AI Developer">
+    <meta property="og:description" content="AI-powered web apps, built front to back and shipped to production.">
+    <meta name="theme-color" content="#08100E">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff5a1f'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='ui-monospace,Menlo,Consolas,monospace' font-weight='700' font-size='30' fill='%23160700'%3Ejk%3C/text%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/f23afc0fcf.js" crossorigin="anonymous"></script>
-    <script src="index.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+
+    <!-- Apply saved theme before paint to avoid a flash -->
+    <script>
+        document.documentElement.classList.add("js");
+        try {
+            var t = localStorage.getItem("jk-theme");
+            if (t) document.documentElement.setAttribute("data-theme", t);
+        } catch (e) {}
     </script>
-    <script type="text/javascript">
-    (function(){
-      emailjs.init({
-        publicKey: "476QBa57rXxhABYJa",
-      });
-   })();
-</script>
+    <script src="https://kit.fontawesome.com/f23afc0fcf.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4.4.1/dist/email.min.js" defer></script>
+    <script src="index.js" defer></script>
 </head>
 <body>
-    <main>
-    <section id="landing-page" onmousemove="moveBackground(event)">
-        <nav>
-            <figure>
-                <img id="personal-logo" src="./assets/logo.svg" alt="Logo" class="logo">
-            </figure>
-            <ul class="nav__link--list">
-                <li class="nav__link">
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    "
-                    >About</a>                    
-                </li>
-                <li class="nav__link">
-                    <a href="#projects" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    "
-                    >Projects</a>                    
-                </li>
-                <li class="nav__link" onclick="toggleModal()">
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    "
-                    aria-label="Black Mode Toggle" 
-                    >Contact</a>                    
-                </li>                
-                <li class="nav__link" onclick="toggleContrast()">
-                    <a href="#" class="
-                    nav__link--anchor
-                    link__hover-effect
-                    link__hover-effect--black
-                    "
-                    aria-label="Black Mode Toggle"                    
-                    >
-                    <i class="fa-sharp fa-solid fa-circle-half-stroke"></i>
-                </a>                    
-                </li>                
-            </ul>
-        </nav>
-        <header>
-            <div class="header">
-                <div class="header__content">
-                    <h1 class="title"><span class="gold1">Hey! I'm Julius Karnwie!</span></h1>
-                    <h2 class="title__secondary"><span class="blue1">Frontend Developer.</span></h2>
-                    <p class="header__para">
-                        <b class="green1">Afrontend developer building responsive,
-                            <br> accessible web applications with React, TypeScript,
-                            <br> Next.js, and Tailwind CSS. And I am always
-                            <br>learning new technologies to improve my skills
-                            <br> and keep up with the latest industry trends.</b>
-                    </p>
-                    <div class="social__list">
-                    <a class="social__link" href="https://www.linkedin.com/in/julius-karnwie-173b4a7/" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin click"></i></a>
-                    <a class="social__link" href="https://github.com/jkarnwie2000" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github click"></i></a>
-                    <a class="social__link" href="assets/Julius Karnwie Resume.pdf" target="_blank" aria-label="Resume"><i class="fa-solid fa-file-pdf click"></i></a>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <a href="#">
-        <button class="mail__bnt click" onclick="toggleModal()"aria-label="Close modal">
-            <i class="fas fa-envelope"></i>
-        </button>
-        </a>
+    <a class="skip" href="#main">Skip to content</a>
 
-        <a href="#projects" class="scroll" aria-label="Projects">
-        <div class="scroll__icon click"></div>
-        </a>
-        
-        <div class="modal">
-            <div class="modal__half modal__about">
-                <h3 class="modal__title modal__title--about"><b>Here's a bit about me.</b></h3>
-                <h4 class="modal__sub-title modal__sub-title--about"><b><br>Frontend Developer.</b></h4>
-                <p class="modal__para">
-                    <b>
-                     A frontend developer building responsive, accessible web applications with React, TypeScript, Next.js, and Tailwind CSS.
-                    <br><br>
-                     I enjoy solving tough engineering problems and bringing symmetry and aesthetics to my projects.
-                    <br>
-                    <br>Cheers.</b>                   
-                </p>
-                <div class="modal__languages">
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="./assets/html.png" alt="">
-                        <span class="language__name">HTML</span>
-                    </figure>                    
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="./assets/css.png" alt="">
-                        <span class="language__name">CSS</span>
-                    </figure>                    
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="./assets/js.png" alt="">
-                        <span class="language__name">JavaScript</span>
-                    </figure>                    
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="./assets/React JS.png" alt="">
-                        <span class="language__name">React</span>
-                    </figure>            
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="./assets/Node.js.png" alt="">
-                        <span class="language__name">Node.js</span>
-                    </figure>            
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="./assets/vercel-logo.png" alt="">
-                        <span class="language__name">Vercel</span>
-                    </figure>            
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="./assets/typescript.png" alt="">
-                        <span class="language__name">TypeScript</span>
-                    </figure>            
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="./assets/icons8-tailwind-css.png" alt="">
-                        <span class="language__name">Tailwind CSS</span>
-                    </figure>            
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="./assets/copilot-color.png" alt="">
-                        <span class="language__name">Copilot</span>
-                    </figure>            
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="./assets/nextjs-org-logo.png" alt="">
-                        <span class="language__name">Next.js</span>
-                    </figure>            
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="./assets/firebase.png" alt="">
-                        <span class="language__name">Firebase</span>
-                    </figure>            
-                    <figure class="modal__language">
-                        <img class="modal__language--img" src="./assets/Vite.js.png" alt="">
-                        <span class="language__name">Vite</span>
-                    </figure>            
+    <!-- ============ TOP BAR ============ -->
+    <header class="topbar" id="top">
+        <div class="wrap topbar__inner">
+            <a href="#top" class="brand" aria-label="Julius Karnwie, back to top">
+                <span class="brand__mark">jk</span>
+                <span class="brand__name">julius<span class="brand__dot">.</span>karnwie</span>
+            </a>
+
+            <nav class="nav" aria-label="Primary">
+                <button class="nav__toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
+                    <span></span><span></span>
+                </button>
+                <ul class="nav__list" id="nav-list">
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#stack">Stack</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="btn btn--small btn--ink" href="./assets/Julius Karnwie Resume.pdf" target="_blank" rel="noopener">Résumé <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a></li>
+                </ul>
+            </nav>
+
+            <button class="theme-toggle" type="button" aria-label="Switch color theme">
+                <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                <i class="fa-solid fa-sun" aria-hidden="true"></i>
+            </button>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- ============ HERO ============ -->
+        <section class="hero">
+            <div class="wrap hero__grid">
+                <div class="hero__copy">
+                    <p class="status"><span class="status__pulse"></span>Open to full-time roles · Remote or Roanoke, VA</p>
+                    <h1 class="hero__title">
+                        I build <span class="hl">AI-powered</span> web apps,
+                        <span class="hero__title-alt">front to back.</span>
+                    </h1>
+                    <p class="hero__lede">
+                        I'm <strong>Julius Karnwie</strong>, a full-stack AI developer. I turn ideas into
+                        production apps: React and Next.js interfaces, serverless APIs, AI image analysis,
+                        Stripe payments and transactional email, all tested, linted in CI and deployed on Vercel.
+                    </p>
+                    <div class="hero__cta">
+                        <a href="#work" class="btn btn--signal">See shipped work <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+                        <a href="#contact" class="btn btn--ghost">Let's talk</a>
+                    </div>
+                    <ul class="hero__social">
+                        <li><a href="https://github.com/jkarnwie2000" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github" aria-hidden="true"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/julius-karnwie-173b4a7/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a></li>
+                        <li><a href="mailto:jkarnwie2000@yahoo.com" aria-label="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a></li>
+                        <li><a href="./assets/Julius Karnwie Resume.pdf" target="_blank" rel="noopener" aria-label="Résumé PDF"><i class="fa-solid fa-file-lines" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+
+                <!-- Ask-my-portfolio console -->
+                <div class="console" aria-label="Ask my portfolio">
+                    <div class="console__bar">
+                        <span class="console__dots"><i></i><i></i><i></i></span>
+                        <span class="console__title">ask-julius · agent</span>
+                        <span class="console__model">v2026.11</span>
+                    </div>
+                    <div class="console__body" aria-live="polite">
+                        <p class="console__line console__line--sys">› Hi, recruiter 👋 Pick a question.</p>
+                        <p class="console__line console__line--q" id="console-q"></p>
+                        <p class="console__line console__line--a" id="console-a"></p>
+                    </div>
+                    <div class="console__chips" role="group" aria-label="Questions">
+                        <button class="chip" type="button" data-q="stack">What do you build?</button>
+                        <button class="chip" type="button" data-q="ai">Show me AI work</button>
+                        <button class="chip" type="button" data-q="ship">How do you ship?</button>
+                        <button class="chip" type="button" data-q="hire">Are you available?</button>
+                    </div>
+                    <p class="console__note">Preset answers · no data leaves this page</p>
                 </div>
             </div>
-            <div class="modal__half modal__contact">
-                <i class="fas fa-times modal__exit click" onclick="toggleModal()" aria-label="Close"></i>
-                <h3 class="modal__title model__title--contact">
-                    Let's have a chat!
-                </h3>
-                <h3 class="modal__sub-title model__sub-title--contact">
-                    I am currently open to new opportunities.
-                </h3>
-                <form id="contact__form" onsubmit="contact(event)">
-                    <div class="form__item">
-                        <label class="form__item--label">Name</label>
-                        <input class="input" name="user__name" type="text"></input>
-                    </div>
-                    <div class="form__item">
-                        <label class="form__item--label">Email</label>
-                        <input class="input" name="user__email" type="email"></input>
-                    </div>
-                    <div class="form__item">
-                        <label class="form__item--label">Message</label>
-                        <textarea class="input" name="message" type="text"></textarea> 
-                    </div>
-                    <button id="contact__submit" class="form__submit">
-                        Send it my way
-                    </button>
-                </form>
-                <div class="modal__overlay modal__overlay--loading">
-                    <i class="fas fa-spinner"></i>
-                </div>
-                <div class="modal__overlay modal__overlay--success">                                       
-                    Thanks for the message! Looking forward to speaking with you soon.
-                </div>
-            </div>            
-        </div>
-        <img src="./assets/semi circle.svg" class="shape shape--0"alt="">        
-        <img src="./assets/circle.svg" class="shape shape--1"alt="">        
-        <img src="./assets/squiggly.svg" class="shape shape--2"alt="">              
-        <img src="./assets/circle.svg" class="shape shape--3"alt="">
-        <img src="./assets/triangle.svg" class="shape shape--4"alt="">        
-        <img src="./assets/circle.svg" class="shape shape--5"alt="">        
-        <img src="./assets/squiggly.svg" class="shape shape--6"alt="">        
-        <img src="./assets/circle.svg" class="shape shape--7"alt="">
-        <img src="./assets/semi circle.svg" class="shape shape--8"alt="">
-    </section>
-    <section id="projects">
-        <div class="container">
-            <div class="row">
-                <h1 class="section__title">
-                    <span class="marron1">Here are some of my</span> <span class="yellow1"> projects</span>
-                </h1>
-                <ul class="project__list">
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="./assets/imag 1.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h2 class="project__description--title">
-                                    Skinstric A.I. Website
-                                </h2>
-                                <h3 class="project__description--sub-title">
-                                    React, TypeScript, Next.js, REST API 
-                                </h3>
-                                <p class="project__description--para">
-                                    <b>“A modern website built by me that captures, uploads, 
-                                    <br>and analyzes a customer’s headshot using generative 
-                                    <br>A. I. to prescribe the optimum skincare routine based 
-                                    <br>on their unique evaluation. I imported the UI codes from 
-                                    <br>Figma, and used Tailwind CSS in intricate steps to link 
-                                    <br>the integrated webcam to the site and get it to function 
-                                    <br>properly. What is exciting about this app is that it 
-                                    <br>generates the subject’s age, race, and gender with 
-                                    <br>maximum accuracy, just by analyzing their image. I 
-                                    <br>also completed the CI workflows in GitHub.”                            
-                                    </b>
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="https://github.com/jkarnwie2000" class="project__description--link" target="_blank" aria-label="GitHub">
-                                       <i class="fa-brands fa-github"></i>
-                                    </a>
-                                    <a href="https://skinstricaiapp-gold.vercel.app/" class="project__description--link" target="_blank" aria-label="Live Demo">
-                                    <i class="fas fa-link"></i>  
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project__wrapper">
-                            <img src="./assets/imag 2.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h2 class="project__description--title">
-                                    Summarist Website
-                                </h2>
-                                <h3 class="project__description--sub-title"> 
-                                React, JavaScript, Next.js, TypeScript, REST API 
-                                </h3>
-                                <p class="project__description--para">
-                                    <b>“A modern book-summary platform built by me that helps 
-                                    <br>users discover popular books, explore concise summaries, 
-                                    <br>and find their next read through personalized 
-                                    <br>recommendations and an easy-to-use interface. What 
-                                    <br>was challenging about this project is the complex
-                                    <br>coding that got the pages to route and the audio
-                                    <br>to play. What is great about this app is that it 
-                                    <br>uses reusable codes for the books and summaries. 
-                                    <br>Therefore, these components can be customized to  
-                                    <br>suit the user’s needs.”</b>                                     
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="https://github.com/jkarnwie2000" class="project__description--link" target="_blank" aria-label="GitHub">
-                                       <i class="fa-brands fa-github"></i>
-                                    </a>
-                                    <a href="https://summarist-app-purple-gold.vercel.app/" class="project__description--link" target="_blank" aria-label="Live Demo">
-                                    <i class="fas fa-link"></i>  
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project__wrapper">
-                            <img src="./assets/imag 3.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h2 class="project__description--title">
-                                    Ultraverse NFT World Website
-                                </h2>
-                                <h3 class="project__description--sub-title">
-                                    React, REST API                             
-                                </h3>
-                                <p class="project__description--para">
-                                    <b>“My modern NFT marketplace where users can discover, 
-                                    <br>explore, and view digital NFT collections through a 
-                                    <br>clean and responsive interface. The beauty of this 
-                                    <br>app is that it uses intricate router states that 
-                                    <br>navigate to each digital item page, from whence the  
-                                    <br>user can visit the owner’s or creator’s niche for a  
-                                    <br>comprehensive surfing experience. The project involved 
-                                    <br>extensive JavaScript coding, intricate Axios fetching, 
-                                    <br>and creating smooth animations for each page loading 
-                                    <br>state.”  
-                                    </b>                                    
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="https://github.com/jkarnwie2000" class="project__description--link" target="_blank" aria-label="GitHub">
-                                       <i class="fa-brands fa-github"></i>
-                                    </a>
-                                    <a href="https://julius-internship-excellentgoldpear.vercel.app/" class="project__description--link" target="_blank" aria-label="Live Demo">
-                                    <i class="fas fa-link"></i>  
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project__wrapper">
-                            <img src="./assets/imag 4.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h2 class="project__description--title">
-                                    Books E-commerce Website
-                                </h2>
-                                <h3 class="project__description--sub-title">
-                                    React, JavaScript, React Router
-                                </h3>
-                                <p class="project__description--para">
-                                    <b>“This e-commerce library helps customers select and add books 
-                                    <br>to a cart for purchase. It also allows shoppers to sort books 
-                                    <br>by price and rating. What is interesting about this site is that 
-                                    <br>customers can add up to 99 books to the cart, which calculates the
-                                    <br>sales tax, subtotal, and total cost of the purchase. I built the 
-                                    <br>entire app including its page and UI components, and implemented and 
-                                    <br>ran component tests using React Testing Library and Vitest.”</b>                                    
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="https://github.com/jkarnwie2000" class="project__description--link" target="_blank" aria-label="GitHub">
-                                       <i class="fa-brands fa-github"></i>
-                                    </a>
-                                    <a href="https://books-ecommerce-gold.vercel.app/" target="_blank" class="project__description--link" aria-label="Live Demo">
-                                    <i class="fas fa-link"></i>  
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project__wrapper">
-                            <img src="./assets/imag 5.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h2 class="project__description--title">
-                                    Treact Inc. Portfolio Website
-                                </h2>
-                                <h3 class="project__description--sub-title">
-                                    HTML, CSS, JavaScript
-                                </h3>
-                                <p class="project__description--para">
-                                    <b>"A fully responsive marketing site built from modular, 
-                                    <br>reusable components with a mobile-first layout. This 
-                                    <br>project involved extensive styling, keen attention to 
-                                    <br>detail, and complex applications of web design expertise. 
-                                    <br>I wrote the HTML, CSS, and JavaScript codes that give the 
-                                    <br>site its cohesive layout and aesthetic look." 
-                                    </b>                                    
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="https://github.com/jkarnwie2000" class="project__description--link" target="_blank" aria-label="GitHub">
-                                       <i class="fa-brands fa-github"></i>
-                                    </a>
-                                    <a href="https://treact-project1.vercel.app/" class="project__description--link" target="_blank" aria-label="Live Demo">
-                                    <i class="fas fa-link"></i>  
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project__wrapper">
-                            <img src="./assets/imag 6.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h2 class="project__description--title">
-                                   Json Placeholder API Website
-                                </h2>
-                                <h3 class="project__description--sub-title">
-                                    React, JavaScript, REST API
-                                </h3>
-                                <p class="project__description--para">
-                                    <b>“This app allows users to fetch all posts made by individuals from 
-                                    <br>the JSONPlaceholder REST API using Axios. The app features a 
-                                    <br>clickable card for each user that navigates to a page displaying 
-                                    <br>all the user’s posts, based on their unique user ID. I built the 
-                                    <br>entire app and implemented and ran its mock API test.”</b>                                    
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="https://github.com/jkarnwie2000" class="project__description--link" target="_blank" aria-label="GitHub">
-                                       <i class="fa-brands fa-github"></i>
-                                    </a>
-                                    <a href="https://module-6-final-preparation-projectg.vercel.app/" class="project__description--link" target="_blank" aria-label="Live Demo">
-                                    <i class="fas fa-link"></i>  
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project__wrapper">
-                            <img src="./assets/imag 7.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h2 class="project__description--title">
-                                   React Film App  
-                                </h2>
-                                <h3 class="project__description--sub-title">
-                                  React, REST API
-                                </h3>
-                                <p class="project__description--para">
-                                   <b>"A search and browse films app with dynamic routing, 
-                                   <br>asynchronous data fetching, and reusable, responsive 
-                                   <br>card components. What is exciting about this app is 
-                                   <br>that it brings up a search result for every movie that  
-                                   <br>exists in the IMDb database. I built its components  
-                                   <br>and fetch functionality from scratch using React, 
-                                   <br>JavaScript, and Axios." 
-                                   </b>                                    
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="https://github.com/jkarnwie2000" class="project__description--link" target="_blank" aria-label="GitHub">
-                                       <i class="fa-brands fa-github"></i>
-                                    </a>
-                                    <a href="https://final-react-movies-projectcrimsongo.vercel.app/" class="project__description--link" target="_blank" aria-label="Live Demo">
-                                    <i class="fas fa-link"></i>  
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                            </div>
-                        </div>
-                    </li>
+
+            <!-- Proof strip -->
+            <div class="wrap">
+                <ul class="proof">
+                    <li><span class="proof__num">6</span><span class="proof__label">production apps live on Vercel</span></li>
+                    <li><span class="proof__num">3</span><span class="proof__label">roles: founder, AI intern, member support</span></li>
+                    <li><span class="proof__num">15</span><span class="proof__label">component tests in Vitest + RTL</span></li>
+                    <li><span class="proof__num">CI</span><span class="proof__label">ESLint on every push and pull request</span></li>
                 </ul>
             </div>
+        </section>
+
+        <!-- ============ WORK ============ -->
+        <section class="section" id="work">
+            <div class="wrap">
+                <div class="section__head">
+                    <p class="kicker">// selected work</p>
+                    <h2 class="section__title">Things I've built and <span class="hl">shipped</span>.</h2>
+                    <div class="filters" role="group" aria-label="Filter projects">
+                        <button class="filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+                        <button class="filter" type="button" data-filter="ai" aria-pressed="false">AI</button>
+                        <button class="filter" type="button" data-filter="fullstack" aria-pressed="false">Full-stack</button>
+                        <button class="filter" type="button" data-filter="frontend" aria-pressed="false">Frontend</button>
+                    </div>
+                </div>
+
+                <div class="bento">
+                    <!-- Featured: Skinstric -->
+                    <article class="tile tile--feature reveal" data-tags="ai frontend">
+                        <div class="tile__media">
+                            <img src="./assets/imag 1.png" alt="Skinstric AI landing page with the headline Sophisticated skincare" loading="lazy">
+                            <span class="badge badge--ai"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i> AI</span>
+                        </div>
+                        <div class="tile__body">
+                            <p class="tile__meta">Remote internship · Next.js · TypeScript</p>
+                            <h3 class="tile__title">Skinstric AI</h3>
+                            <p class="tile__text">
+                                An AI skincare platform. Users take or upload a headshot, the app sends it to an
+                                image-analysis API, and the results show estimated race, age and sex with confidence
+                                scores to guide personalized skincare.
+                            </p>
+                            <ul class="tile__points">
+                                <li>Built from a Figma spec in Next.js, TypeScript and Tailwind CSS</li>
+                                <li>Wired the upload and analysis REST endpoints with loading and error states</li>
+                                <li>Added a GitHub Actions workflow that runs ESLint on every push and pull request</li>
+                            </ul>
+                            <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Tailwind</li><li>REST API</li><li>AI vision</li></ul>
+                            <div class="tile__links">
+                                <a class="btn btn--small btn--signal" href="https://skinstricaiapp-gold.vercel.app/" target="_blank" rel="noopener">Live demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                                <a class="btn btn--small btn--ghost" href="https://github.com/jkarnwie2000/SkinstricAIApp" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Featured: React Film App -->
+                    <article class="tile tile--feature tile--flip reveal" data-tags="fullstack">
+                        <div class="tile__media">
+                            <img src="./assets/imag 7.png" alt="React Film App movie store interface" loading="lazy">
+                            <span class="badge badge--full"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Full-stack</span>
+                        </div>
+                        <div class="tile__body">
+                            <p class="tile__meta">Personal build · React · Serverless</p>
+                            <h3 class="tile__title">Julius Gold's Movies Library</h3>
+                            <p class="tile__text">
+                                A movie store with live search and IMDb ratings, a persistent cart, Stripe checkout,
+                                order confirmation emails and a secure admin dashboard, deployed on Vercel.
+                            </p>
+                            <ul class="tile__points">
+                                <li>Vercel serverless functions handle checkout and order logic</li>
+                                <li>Stripe Checkout for payments, with confirmation emails sent through Resend</li>
+                                <li>Vercel Blob storage and OMDb API data behind a protected admin view</li>
+                            </ul>
+                            <ul class="tags"><li>React</li><li>Serverless</li><li>Stripe</li><li>Resend</li><li>Vercel Blob</li><li>OMDb API</li></ul>
+                            <div class="tile__links">
+                                <a class="btn btn--small btn--signal" href="https://final-react-movies-projectcrimsongo.vercel.app/" target="_blank" rel="noopener">Live demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                                <a class="btn btn--small btn--ghost" href="https://github.com/jkarnwie2000/JuliusGoldsMoviesLibrary" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Summarist -->
+                    <article class="tile tile--feature reveal" data-tags="fullstack frontend">
+                        <div class="tile__media">
+                            <img src="./assets/imag 2.png" alt="Summarist book summary app" loading="lazy">
+                            <span class="badge badge--full"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Full-stack</span>
+                        </div>
+                        <div class="tile__body">
+                            <p class="tile__meta">Personal build · Next.js · Stripe</p>
+                            <h3 class="tile__title">Summarist</h3>
+                            <p class="tile__text">
+                                A full-stack book platform where users find books, read or listen to short summaries,
+                                and buy copies through a secure Stripe checkout.
+                            </p>
+                            <ul class="tile__points">
+                                <li>Stripe Checkout for book purchases, with email receipts</li>
+                                <li>Firebase Authentication for sign-up, login and protected pages</li>
+                                <li>A custom audio player for listening to summaries</li>
+                            </ul>
+                            <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Stripe</li><li>Firebase Auth</li><li>Redux Toolkit</li><li>Tailwind</li></ul>
+                            <div class="tile__links">
+                                <a class="btn btn--small btn--signal" href="https://summarist-app-purple-gold.vercel.app/" target="_blank" rel="noopener">Live demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                                <a class="btn btn--small btn--ghost" href="https://github.com/jkarnwie2000/SummaristApp" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Ultraverse -->
+                    <article class="tile tile--feature tile--flip reveal" data-tags="frontend">
+                        <div class="tile__media">
+                            <img src="./assets/imag 3.png" alt="Ultraverse NFT marketplace" loading="lazy">
+                            <span class="badge badge--front"><i class="fa-solid fa-code" aria-hidden="true"></i> Frontend</span>
+                        </div>
+                        <div class="tile__body">
+                            <p class="tile__meta">Virtual internship · React · REST API</p>
+                            <h3 class="tile__title">Ultraverse NFT Market</h3>
+                            <p class="tile__text">
+                                A responsive NFT marketplace fed by live API data, where users browse
+                                collections, follow auctions and explore author and item pages.
+                            </p>
+                            <ul class="tile__points">
+                                <li>Fetches collections and items from a REST API with Axios</li>
+                                <li>Collection carousels, live auction countdowns and filtering</li>
+                                <li>Dynamic author and item routes with React Router, plus scroll animations</li>
+                            </ul>
+                            <ul class="tags"><li>React</li><li>React Router</li><li>Axios</li><li>REST API</li><li>React Slick</li><li>AOS</li></ul>
+                            <div class="tile__links">
+                                <a class="btn btn--small btn--signal" href="https://julius-internship-excellentgoldpear.vercel.app/" target="_blank" rel="noopener">Live demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                                <a class="btn btn--small btn--ghost" href="https://github.com/jkarnwie2000/UltraverseNFTMarketplace" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Books -->
+                    <article class="tile tile--feature reveal" data-tags="fullstack frontend">
+                        <div class="tile__media">
+                            <img src="./assets/imag 4.png" alt="Books e-commerce store" loading="lazy">
+                            <span class="badge badge--full"><i class="fa-solid fa-layer-group" aria-hidden="true"></i> Full-stack</span>
+                        </div>
+                        <div class="tile__body">
+                            <p class="tile__meta">Personal build · React · Stripe</p>
+                            <h3 class="tile__title">Books E-commerce</h3>
+                            <p class="tile__text">
+                                A full-stack online bookstore where shoppers browse and sort titles, manage a cart
+                                with a live subtotal, tax and total, and pay through a secure Stripe checkout.
+                            </p>
+                            <ul class="tile__points">
+                                <li>Stripe Checkout for secure online payments</li>
+                                <li>Cart logic plus sorting by price and rating, with React Router pages</li>
+                                <li>15 component render tests in Vitest and React Testing Library</li>
+                            </ul>
+                            <ul class="tags"><li>React</li><li>React Router</li><li>Stripe</li><li>JavaScript</li><li>Vitest</li><li>RTL</li></ul>
+                            <div class="tile__links">
+                                <a class="btn btn--small btn--signal" href="https://books-ecommerce-gold.vercel.app/" target="_blank" rel="noopener">Live demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                                <a class="btn btn--small btn--ghost" href="https://github.com/jkarnwie2000/BooksEcommerceStore" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Clear Member Credit Union -->
+                    <article class="tile tile--feature tile--flip reveal" data-tags="frontend">
+                        <div class="tile__media">
+                            <img src="./assets/imag 5.png" alt="Clear Member Credit Union member dashboard" loading="lazy">
+                            <span class="badge badge--front"><i class="fa-solid fa-code" aria-hidden="true"></i> Frontend</span>
+                        </div>
+                        <div class="tile__body">
+                            <p class="tile__meta">Personal build · Next.js · TypeScript</p>
+                            <h3 class="tile__title">Clear Member Credit Union – Dashboard</h3>
+                            <p class="tile__text">
+                                Credit union dashboard explaining banking in plain language. Members filter transactions,
+                                see why items are pending, understand fees and transfer delays, search help, and send support requests.
+                            </p>
+                            <ul class="tile__points">
+                                <li>Data validation with Zod</li>
+                                <li>Tests written in Vitest</li>
+                                <li>Built on synthetic data, with no real member information</li>
+                            </ul>
+                            <ul class="tags"><li>Next.js</li><li>TypeScript</li><li>Tailwind</li><li>Zod</li><li>Vitest</li></ul>
+                            <div class="tile__links">
+                                <a class="btn btn--small btn--signal" href="https://clearmember-credit-union.vercel.app/" target="_blank" rel="noopener">Live demo <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+                                <a class="btn btn--small btn--ghost" href="https://github.com/jkarnwie2000/ClearMemberCreditUnion" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i> Code</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ STACK as a pipeline ============ -->
+        <section class="section section--band" id="stack">
+            <div class="wrap">
+                <div class="section__head">
+                    <p class="kicker">// how I work</p>
+                    <h2 class="section__title">One pipeline, <span class="hl">idea to production</span>.</h2>
+                    <p class="section__sub">These are the tools I use at each stage of a build, all used in the projects above.</p>
+                </div>
+
+                <ol class="pipeline">
+                    <li class="stage reveal">
+                        <span class="stage__fn">design()</span>
+                        <h3 class="stage__title">Interface</h3>
+                        <p class="stage__text">Figma specs become accessible, mobile-first UIs.</p>
+                        <ul class="tags"><li>React</li><li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li><li>Redux Toolkit</li><li>React Router</li></ul>
+                    </li>
+                    <li class="stage reveal">
+                        <span class="stage__fn">connect()</span>
+                        <h3 class="stage__title">AI &amp; APIs</h3>
+                        <p class="stage__text">AI image analysis, third-party data and auth, wired in with real loading and error states.</p>
+                        <ul class="tags"><li>AI vision APIs</li><li>REST</li><li>Axios / fetch</li><li>Firebase Auth</li><li>OMDb API</li></ul>
+                    </li>
+                    <li class="stage reveal">
+                        <span class="stage__fn">serve()</span>
+                        <h3 class="stage__title">Backend</h3>
+                        <p class="stage__text">Serverless functions for checkout, email, storage and admin.</p>
+                        <ul class="tags"><li>Node.js</li><li>Vercel Functions</li><li>Stripe</li><li>Resend</li><li>Vercel Blob</li><li>Firebase</li></ul>
+                    </li>
+                    <li class="stage reveal">
+                        <span class="stage__fn">ship()</span>
+                        <h3 class="stage__title">Quality &amp; Deploy</h3>
+                        <p class="stage__text">Tests and linting run on every change, and every app ships on Vercel.</p>
+                        <ul class="tags"><li>Vitest</li><li>React Testing Library</li><li>GitHub Actions</li><li>ESLint</li><li>Git</li><li>Vercel</li></ul>
+                    </li>
+                </ol>
+
+                <div class="ai-tools reveal">
+                    <span class="ai-tools__label">AI pair-programming</span>
+                    <span>Claude Code</span><span>GitHub Copilot</span><span>ChatGPT</span>
+                    <span class="ai-tools__note">I use AI coding assistants every day, and I review and test their output before it ships.</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ EXPERIENCE ============ -->
+        <section class="section" id="experience">
+            <div class="wrap exp">
+                <div class="section__head exp__head">
+                    <p class="kicker">// experience</p>
+                    <h2 class="section__title">Where I've <span class="hl">done the work</span>.</h2>
+                    <p class="section__sub">
+                        Developer roles first. My background in support and writing is why I explain
+                        things clearly and care about the person on the other side of the screen.
+                    </p>
+                    <a class="btn btn--ink" href="./assets/Julius Karnwie Resume.pdf" target="_blank" rel="noopener">Full résumé (PDF) <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+                </div>
+
+                <ol class="timeline">
+                    <li class="role reveal">
+                        <p class="role__when">Jan 2026 – Present</p>
+                        <h3 class="role__title">Founder &amp; Developer</h3>
+                        <p class="role__org">Karnwie's Golden Websites · Roanoke, VA</p>
+                        <p class="role__text">I build and deploy responsive, mobile-first websites for small businesses and nonprofits. I turn client goals into clean interfaces and ship them on Vercel.</p>
+                    </li>
+                    <li class="role reveal">
+                        <p class="role__when">Oct 2025 – Apr 2026</p>
+                        <h3 class="role__title">Frontend Developer, Virtual Internship</h3>
+                        <p class="role__org">Skinstric AI · Remote</p>
+                        <p class="role__text">I built the frontend for an AI skincare platform in Next.js and TypeScript, integrated the image-analysis API, fixed browser bugs and added ESLint CI with GitHub Actions.</p>
+                    </li>
+                    <li class="role reveal">
+                        <p class="role__when">Feb 2024 – Jan 2026</p>
+                        <h3 class="role__title">Member Contact Center Representative</h3>
+                        <p class="role__org">Member One Federal Credit Union · Roanoke, VA</p>
+                        <p class="role__text">I resolved high-volume member inquiries accurately and with empathy in a regulated banking environment.</p>
+                    </li>
+                    <li class="role role--edu reveal">
+                        <p class="role__when">Education</p>
+                        <h3 class="role__title">Frontend Developer Certification</h3>
+                        <p class="role__org">Frontend Simplified · React, Next.js, TypeScript</p>
+                        <p class="role__text">Liberty University: MFA, Creative Writing; B.Sc. English &amp; Writing, magna cum laude.</p>
+                    </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section class="section contact" id="contact">
+            <div class="wrap contact__grid">
+                <div class="contact__copy">
+                    <p class="kicker kicker--light">// contact</p>
+                    <h2 class="contact__title">Hiring for a full-stack or AI role? <span class="hl hl--light">Let's talk.</span></h2>
+                    <p class="contact__text">I usually reply within a day. You can send a message here or reach me directly.</p>
+                    <ul class="contact__direct">
+                        <li><i class="fa-solid fa-envelope" aria-hidden="true"></i><a href="mailto:jkarnwie2000@yahoo.com">jkarnwie2000@yahoo.com</a></li>
+                        <li><i class="fa-brands fa-linkedin" aria-hidden="true"></i><a href="https://www.linkedin.com/in/julius-karnwie-173b4a7/" target="_blank" rel="noopener">linkedin.com/in/julius-karnwie</a></li>
+                        <li><i class="fa-brands fa-github" aria-hidden="true"></i><a href="https://github.com/jkarnwie2000" target="_blank" rel="noopener">github.com/jkarnwie2000</a></li>
+                        <li><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span>Roanoke, VA · open to remote</span></li>
+                    </ul>
+                </div>
+
+                <form id="contact__form" class="form" novalidate>
+                    <div class="field">
+                        <label for="f-name">Name</label>
+                        <input id="f-name" name="user__name" type="text" autocomplete="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="f-email">Work email</label>
+                        <input id="f-email" name="user__email" type="email" autocomplete="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="f-msg">Role or message</label>
+                        <textarea id="f-msg" name="message" rows="5" required></textarea>
+                    </div>
+                    <button class="btn btn--signal btn--block" type="submit" id="contact__submit">
+                        <span class="btn__label">Send message</span>
+                        <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                    </button>
+                    <p class="form__status" role="status" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="wrap footer__inner">
+            <p>© <span id="year">2026</span> Julius Karnwie · Hand-built in HTML, CSS &amp; JavaScript</p>
+            <a href="#top" class="footer__top">Back to top <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
         </div>
-    </section>
-    <footer>
-       <div class="container">
-        <div class="row footer__row">
-        <figure>
-            <img class="footer__logo--img" src="./assets/logo.svg" alt="">
-        </figure>
-        <div class="footer__social--list">
-            <a href="https://github.com/jkarnwie2000" class="
-            footer__social--link
-            link__hover-effect
-            link__hover-effect--white
-            " target="_blank" aria-label="GitHub">
-                GitHub
-            </a>
-            <a href="https://www.linkedin.com/in/julius-karnwie-173b4a7/" class="
-            footer__social--link
-            link__hover-effect
-            link__hover-effect--white
-            " target="_blank" aria-label="LinkedIn">
-            LinkedIn
-            </a>
-            <a href="#" onclick="toggleModal()" class="
-            footer__social--link
-            link__hover-effect
-            link__hover-effect--white
-            ">
-            Contact
-            </a>
-            <a href="./assets/Julius Karnwie Resume.pdf" target="_blank" class="
-            footer__social--link
-            link__hover-effect
-            link__hover-effect--white
-            "
-            aria-label="Resume"
-            >
-            Resume
-            </a>
-        </div>
-        <div class="footer__copyright">Copyright © 2026 Julius Karnwie</div>
-        </div>
-       </div> 
     </footer>
-</main>
 </body>
 </html>
