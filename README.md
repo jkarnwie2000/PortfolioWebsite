@@ -1,10 +1,10 @@
-# Julius Karnwie | Frontend Developer with Full-Stack AI Project Experience
+# Julius Karnwie | Frontend Developer with Full-Stack Project Experience
 
 **Live site:** [portfolio-website-verdigris.vercel.app](https://portfolio-website-verdigris.vercel.app)
 
 ## About
 
-This is the portfolio of Julius Karnwie, a frontend developer with full-stack AI project experience based in Roanoke, Virginia, and open to remote roles. It is built for technical recruiters and hiring managers who want to see shipped, working software, so every project links to a live deployment and source code.
+This is the personal portfolio of Julius Karnwie, a frontend developer with full-stack project experience based in Roanoke, Virginia, and open to remote roles. It is built for technical recruiters and hiring managers who want to see shipped, working software, so every project links to a live deployment and source code.
 
 The site is hand-built in semantic HTML, modern CSS and vanilla JavaScript, with no framework or build step. That keeps it fast, accessible and easy to audit. It uses a custom "Verdigris & Signal" design system: a deep pine background with bone-white text, signal-orange highlights and verdigris teal accents. Visitors can switch to a light mode, and their choice is remembered.
 
