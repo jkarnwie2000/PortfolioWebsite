@@ -1,12 +1,12 @@
-# Julius Karnwie | Full-Stack AI Developer Portfolio
+# Julius Karnwie | Frontend Developer with Full-Stack Project Experience
 
 **Live site:** [portfolio-website-verdigris.vercel.app](https://portfolio-website-verdigris.vercel.app)
 
 ## About
 
-This is the personal portfolio of Julius Karnwie, a full-stack AI developer based in Roanoke, Virginia, and open to remote roles. It is built for technical recruiters and hiring managers who want to see shipped, working software quickly, so every project links to a live deployment and its source code.
+This is the personal portfolio of Julius Karnwie, a frontend developer with full-stack project experience based in Roanoke, Virginia, and open to remote roles. It is built for technical recruiters and hiring managers who want to see shipped, working software, so every project links to a live deployment and source code.
 
-The site is hand-built in semantic HTML, modern CSS and vanilla JavaScript, with no framework or build step. That keeps it fast, accessible and easy to audit. It uses a custom "Verdigris & Signal" design system: a deep pine background with bone-white text, signal-orange highlights and verdigris teal accents. Visitors can switch to a crisp light mode, and their choice is remembered.
+The site is hand-built in semantic HTML, modern CSS and vanilla JavaScript, with no framework or build step. That keeps it fast, accessible and easy to audit. It uses a custom "Verdigris & Signal" design system: a deep pine background with bone-white text, signal-orange highlights and verdigris teal accents. Visitors can switch to a light mode, and their choice is remembered.
 
 The hero opens with an "Ask my portfolio" console. Recruiters tap a question, such as "Show me AI work" or "Are you available?", and a short answer types out in the style of an AI chat. The answers are preset, so no data leaves the page. A proof strip below it summarizes six production apps, three professional roles, fifteen component tests and continuous-integration linting on every push.
 

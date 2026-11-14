@@ -53,7 +53,7 @@ const ANSWERS = {
     },
     hire: {
         q: "Are you available?",
-        a: "Yes. I'm open to full-time Full-Stack or AI Developer roles, remote or around Roanoke, VA. The fastest way to reach me is the form at the bottom of this page or " + DIRECT_EMAIL + ".",
+        a: "Yes. I'm open to full-time Frontend Developer roles that include full-stack work, remote or around Roanoke, VA. The fastest way to reach me is the form at the bottom of this page or " + DIRECT_EMAIL + ".",
     },
 };
 
