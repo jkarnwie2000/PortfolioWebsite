@@ -41,7 +41,7 @@ navList.addEventListener("click", (e) => { if (e.target.closest("a")) setNav(fal
 const ANSWERS = {
     stack: {
         q: "What do you build?",
-        a: "Production web apps, end to end. React and Next.js interfaces in TypeScript, serverless APIs on Vercel, and integrations with image-analysis APIs, Stripe payments, Resend email and Firebase auth.",
+        a: "Production web apps, end to end. React and Next.js interfaces in TypeScript, serverless APIs on Vercel, and integrations with AI image analysis, Stripe payments, Resend email and Firebase auth.",
     },
     fullstack: {
         q: "Show me full-stack work",
