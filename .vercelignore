@@ -6,3 +6,5 @@ assets/Julius Karnwie Resume.docx
 .env.local
 .vercel
 ~$*
+docs
+~WRL*.tmp
