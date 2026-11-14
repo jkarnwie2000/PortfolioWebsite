@@ -41,15 +41,15 @@ navList.addEventListener("click", (e) => { if (e.target.closest("a")) setNav(fal
 const ANSWERS = {
     stack: {
         q: "What do you build?",
-        a: "Production web apps, end to end. React and Next.js interfaces in TypeScript, serverless APIs on Vercel, and integrations with AI image analysis, Stripe payments, Resend email and Firebase auth.",
+        a: "Production web apps, end to end. React and Next.js interfaces in TypeScript, serverless APIs on Vercel, and integrations with image-analysis APIs, Stripe payments, Resend email and Firebase auth.",
     },
-    ai: {
-        q: "Show me AI work",
-        a: "Skinstric AI. Users capture or upload a headshot, I send it to an image-analysis API and show age, race and sex predictions with confidence scores. I built it from a Figma spec in Next.js and TypeScript during a remote internship. The live demo is in Work, just below.",
+    fullstack: {
+        q: "Show me full-stack work",
+        a: "Wakis Mart Deli & Grocery. A Node.js and Express API backed by PostgreSQL through Prisma, Stripe Checkout with email order confirmations, and an admin dashboard for stock and orders. The live demo is in Work, just below.",
     },
     ship: {
         q: "How do you ship?",
-        a: "I use a Git and GitHub flow, run ESLint in GitHub Actions on every push and PR, write component tests in Vitest and React Testing Library, and deploy everything on Vercel. AI assistants speed me up, and I still review and test their output before it ships.",
+        a: "I use a Git and GitHub flow, run ESLint in GitHub Actions on every push and PR, write component tests in Vitest and React Testing Library, and deploy everything on Vercel. Coding assistants speed me up, and I still review and test their output before it ships.",
     },
     hire: {
         q: "Are you available?",
