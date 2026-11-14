@@ -20,27 +20,27 @@ The layout is responsive from wide desktops down to 390-pixel phones, respects r
 
 **Hero: dark theme (default)**
 
-![Hero section in the dark theme, with the "Ask my portfolio" console](docs/screenshots/hero-dark.png)
+![Hero section in the dark theme, with the "Ask my portfolio" console](docs/screenshots/hero-dark-2026-11-14.png)
 
 **Hero: light theme**
 
-![Hero section in the light theme](docs/screenshots/hero-light.png)
+![Hero section in the light theme](docs/screenshots/hero-light-2026-11-14.png)
 
 **Selected work: filterable project case studies**
 
-![Selected work section with filter buttons and featured project cards](docs/screenshots/projects.png)
+![Selected work section with filter buttons and featured project cards](docs/screenshots/projects-2026-11-14.png)
 
 **How I work: the build pipeline**
 
-![Pipeline section mapping tools to design, connect, serve and ship stages](docs/screenshots/stack.png)
+![Pipeline section mapping tools to design, connect, serve and ship stages](docs/screenshots/stack-2026-11-14.png)
 
 **Contact: inline EmailJS form**
 
-![Contact section with direct links and the message form](docs/screenshots/contact.png)
+![Contact section with direct links and the message form](docs/screenshots/contact-2026-11-14.png)
 
 **Mobile (390 px)**
 
-<img src="docs/screenshots/mobile.png" alt="Portfolio hero on a 390-pixel-wide phone screen" width="300">
+<img src="docs/screenshots/mobile-2026-11-14.png" alt="Portfolio hero on a 390-pixel-wide phone screen" width="300">
 
 ## Tech Stack
 
